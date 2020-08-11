@@ -1,6 +1,23 @@
 # CentraldogmaConfigProvider
 
-**TODO: Add description**
+LINE Central Dogma config backend for Config.Provider.
+
+## How to use it
+
+Just add this config inside project function (in mix.exs):
+
+      releases: [
+        cd_test_app: [
+          config_providers: [
+            {CentralDogmaConfigProvider,
+             endpoint: "<your_central_dogma_endpoint_with_http_scheme>",
+             project: "<your_project_name>",
+             repository: "<your_repository_name>",
+             app: :<app_name>,
+             path: "<path>"}
+          ]
+        ]
+      ]
 
 ## Installation
 
